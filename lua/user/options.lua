@@ -30,8 +30,8 @@ vim.opt.numberwidth = 2                         -- set number column width to 2 
 vim.opt.wrap = false                            -- display line as one long line
 vim.opt.scrolloff = 8                           -- is one my favorite
 vim.opt.sidescrolloff = 8
-
-
+vim.g["python_host_prog"] = "~/AppData/Local/Microsoft/WindowsApps/"
+vim.g["python3_host_prog"] = "$HOME/venv/neovim3/Scripts/python.exe"
 vim.opt.shortmess:append "c"
 
 vim.cmd "se whichwrap+=<,>,[,],h,l"
