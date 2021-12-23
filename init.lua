@@ -5,4 +5,4 @@ require "user.colorscheme"
 require "user.lualine"
 require "user.cmp"
 require "user.bufferline"
-
+require "user.lsp"
