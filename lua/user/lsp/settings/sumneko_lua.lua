@@ -1,3 +1,5 @@
+local runtimePath = vim.fn.expand("$VIMRUNTIME/lua"):gsub("\\","/")
+local configPath = vim.fn.stdpath("config") .. "/lua"
 return {
 	settings = {
 
@@ -7,8 +9,9 @@ return {
 			},
 			workspace = {
 				library = {
-					[vim.fn.expand("$VIMRUNTIME/lua")] = true,
-					[vim.fn.stdpath("config") .. "/lua"] = true,
+					[runtimePath:gsub("\\","/")] = true,
+                    [configPath:gsub("\\","/")] = true,
+
 				},
 			},
 		},
