@@ -74,6 +74,12 @@ return packer.startup(function(use)
     -- Telescope
     use "nvim-telescope/telescope.nvim"
     use 'nvim-telescope/telescope-media-files.nvim'
+
+    -- TreeSitter
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = "TSUpdate",
+    }
     -- Automatically set up your configuration after clonsing packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
