@@ -67,10 +67,10 @@ return packer.startup(function(use)
     use "L3MON4D3/LuaSnip" --snippet engine
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
     
-    -- LSP 
+    -- LSP
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-
+    use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'} -- Flutter lsp
     -- Telescope
     use "nvim-telescope/telescope.nvim"
     use 'nvim-telescope/telescope-media-files.nvim'
