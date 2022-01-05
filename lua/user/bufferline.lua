@@ -3,7 +3,7 @@ require('bufferline').setup {
     indicator_icon = '▎',
     buffer_close_icon = '',
     modified_icon = '●',
-    close_icon = '',
+    close_icon = '',
     left_trunc_marker = '',
     name_formatter = function(buf)  -- buf contains a "name", "path" and "bufnr"
     -- remove extension from markdown files for example
