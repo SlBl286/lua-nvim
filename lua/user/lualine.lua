@@ -1,4 +1,4 @@
-str = "한효주"
+ str = "한효주"
 require'lualine'.setup {
   options = {
     icons_enabled = true,
