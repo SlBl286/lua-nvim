@@ -1,4 +1,6 @@
+SECONDS_IN_A_DAY = 60 * 60 * 24
 str = "한효주"
+dayFrom220200 = math.ceil(os.difftime(os.time(), os.time({year = 1987,month = 2,day = 22})) / SECONDS_IN_A_DAY)
 require'lualine'.setup {
   options = {
     icons_enabled = true,
@@ -12,7 +14,7 @@ require'lualine'.setup {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'str'},
-    lualine_x = {"os.date('%d-%m-%Y')", 'data', "require'lsp-status'.status()",'encoding', {
+    lualine_x = {'dayFrom220200', 'data', "require'lsp-status'.status()",'encoding', {
       'fileformat',
       symbols = {
         unix = '', -- e712

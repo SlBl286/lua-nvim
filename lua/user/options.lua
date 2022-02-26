@@ -35,7 +35,7 @@ vim.g["python3_host_prog"] = "$HOME/venv/neovim3/Scripts/python.exe"
 vim.opt.shortmess:append "c"
 vim.opt.confirm = true
 vim.opt.shell="C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
-vim.opt.shellslash = true
+--vim.opt.shellslash = true
 vim.cmd "se whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] --this doesn't work
